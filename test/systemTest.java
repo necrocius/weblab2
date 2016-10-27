@@ -43,6 +43,12 @@ public class systemTest {
     public void hello() {
         system s1 = new system(1, 2, 3);
         system s2 = new system(4, 5, 6);
+        system s3 = new system(1, 2, 3);
+        system s4 = new system(0, 0, 6);
+        system s5 = new system(4, 8, 7);
         assertEquals(s1.decision(s2),"9");
+        assertEquals(s1.decision(s3),"0");
+        assertEquals(s1.decision(s4),"1");
+        assertEquals(s1.decision(s5),"2");
     }
 }
