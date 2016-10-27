@@ -14,6 +14,11 @@ public class system {
         d = ob1.a*b - a*ob1.b;
         if (d==0)
             return "2";
-        return "9";
+        else {
+            float e, f;
+            e = ob1.c*b - c*ob1.b;
+            f = ob1.a*c - a*ob1.c;
+            return "Point " + e/d + " " + f/d;
+        }
     }
 }
